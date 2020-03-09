@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Creating some form
+        </title>
+        <style>
+        input[type=text]
+        {
+            background-color: rgb(233, 216, 216);
+            background-image: url('search.jpg');
+            background-position: 10px 10px;
+            background-repeat: none;
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+       
+                   }
+        
+        input[type=text]:focus
+        {
+            background-color: greenyellow;
+            transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 12px 8px;
+            cursor: pointer;
+            }
+
+            select {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+            width:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <lable>FirstName:</lable>
+            <input type="text" id="firstname"><br>
+            <lable>Lastname:</lable>
+            <input type="text" id="Lastname"><br>
+            <lable>Country:</lable><br>
+            <select id="Country" name="country:">
+                
+                <option value="in">India</option>
+                <option value="us"  selected>United states of America</option>
+                <option value="ca">Canada</option>
+                <option value="Ur">Urope</option>   
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <textarea>Write Something:</textarea>
+            <br>
+            <input type="button" value="GoBack">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            
+         </form>
+    </body>
+</html>
